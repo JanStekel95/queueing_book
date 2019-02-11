@@ -117,7 +117,7 @@ mu = 21
 These are the number of arrivals in each period.
 
 \begin{pyconsole}
-a = np.random.poisson(labda, 10)
+a = np.random.poisson(lambda, 10)
 a
 \end{pyconsole}
 
@@ -178,7 +178,7 @@ Now I am going to run the same code, but for a larger instance.
 
 \begin{pyconsole}
 num = 1000
-a = np.random.poisson(labda, num)
+a = np.random.poisson(lambda, num)
 c = mu * np.ones_like(a)
 Q = np.zeros_like(a)
 d = np.zeros_like(a)
