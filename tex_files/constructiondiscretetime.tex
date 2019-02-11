@@ -699,6 +699,8 @@ among a number of inheritors, each having a different claim size.
   used to serve the other queue. Any extra capacity beyond the
   reserved capacity is given to queue A with priority. Formulate a set
   of recursions to analyze this situation.
+Let $r_A$ be the reserved capacity for queue A, and likewise for
+   $r_B$. We assume of course that $c_k\geq r_A + r_B$, for all $k$.
   \begin{solution}
     First determine how much capacity queue $B$ minimally needs in
     period $k$:
@@ -739,8 +741,7 @@ d_{k,B} &= \min\{Q_{k-1, B}, c_k-d_{k,A}\}.
   capacity beyond the reserved capacity is given to queue A with
   priority. Formulate a set of recursions to analyze this situation.
 
-  Let $r_A$ be the reserved capacity for queue A, and likewise for
-   $r_B$. We assume of course that $c_k\geq r_A + r_B$, for all $k$.
+  
    \begin{solution} Queue A can use all capacity, except what is
      reserved for queue B:
 \begin{equation*}
